@@ -3,9 +3,6 @@ from mongoengine import  connect
 import sys
 from pymongo.errors import ConnectionFailure
 
-
-
-
 def initialize_db():
     try:
         connect('fastapi', host='mongodb://localhost:27017/') 
